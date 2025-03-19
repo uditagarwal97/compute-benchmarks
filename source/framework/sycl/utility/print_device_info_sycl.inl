@@ -23,11 +23,19 @@ std::map<sycl::info::device_type, std::string> deviceTypeToString{
     {sycl::info::device_type::host, "Host"},
     {sycl::info::device_type::all, "All"}};
 
+#ifndef USING_ADAPTIVECPP_SYCL
 std::map<sycl::backend, std::string> backendToString{
     {sycl::backend::opencl, "OpenCL"},
     {sycl::backend::ext_oneapi_level_zero, "oneAPI Level Zero"},
     {sycl::backend::ext_oneapi_cuda, "oneAPI CUDA"},
     {sycl::backend::all, "All"}};
+#else
+std::map<sycl::backend, std::string> backendToString{
+    {sycl::backend::ocl, "OpenCL"},
+    {sycl::backend::level_zero, "oneAPI Level Zero"},
+    {sycl::backend::cuda, "oneAPI CUDA"},
+    {sycl::backend::omp, "OpenMP"}};
+#endif
 
 void printDeviceInfo() {
     auto device = sycl::device{sycl::gpu_selector_v};
@@ -38,7 +46,7 @@ void printDeviceInfo() {
     auto deviceName = device.get_info<sycl::info::device::name>();
     auto vendorName = device.get_info<sycl::info::device::vendor>();
     auto deviceType = deviceTypeToString[device.get_info<sycl::info::device::device_type>()];
-    auto backend = platform.get_backend();
+    auto backend = device.get_backend();
 
     std::cout << "Using SYCL backend: " << backendToString[backend] << std::endl;
     std::cout << "Driver version: " << driverVersion << std::endl;

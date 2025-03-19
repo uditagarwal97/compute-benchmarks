@@ -15,13 +15,17 @@
 
 static auto enableProfiling = sycl::property::queue::enable_profiling();
 static auto inOrder = sycl::property::queue::in_order();
+
+#ifndef USING_ADAPTIVECPP_SYCL
 static auto discardEvents = sycl::ext::oneapi::property::queue::discard_events();
+#endif
 
 static const sycl::property_list queueProps[] = {
     sycl::property_list{},
     sycl::property_list{enableProfiling},
     sycl::property_list{inOrder},
     sycl::property_list{inOrder, enableProfiling},
+#ifndef USING_ADAPTIVECPP_SYCL
     // Note: discard_events cannot be used with enable_profiling!
     // Note: empirically, discard_events also appears to be ignored for
     // out-of-order queues, but this combination does not generate an error, so
@@ -30,6 +34,7 @@ static const sycl::property_list queueProps[] = {
     sycl::property_list{enableProfiling},
     sycl::property_list{discardEvents, inOrder},
     sycl::property_list{inOrder, enableProfiling},
+#endif
 };
 
 static TestResult run(const SubmitKernelArguments &arguments, Statistics &statistics) {
@@ -44,7 +49,9 @@ static TestResult run(const SubmitKernelArguments &arguments, Statistics &statis
     auto queuePropsIndex = 0;
     queuePropsIndex |= arguments.useProfiling ? 0x1 : 0;
     queuePropsIndex |= arguments.inOrderQueue ? 0x2 : 0;
+#ifndef USING_ADAPTIVECPP_SYCL
     queuePropsIndex |= arguments.discardEvents ? 0x4 : 0;
+#endif
     sycl::queue queue{queueProps[queuePropsIndex]};
 
     Timer timer;

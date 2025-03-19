@@ -6,6 +6,23 @@
 
 set(SYCL_FOUND FALSE)
 
+# Check if ACPP_INSTALL_ROOT and BUILD_SYCL_ACPP is set.
+if (BUILD_SYCL_ACPP)
+
+    # Building with AdaptiveCpp is only supported on Linux
+    if (NOT UNIX)
+        message(FATAL "FindSYCL: Building with AdaptiveCpp is only supported on Linux.")
+    endif()
+
+    # Check if ACPP_INSTALL_ROOT is set
+    if (NOT ACPP_INSTALL_ROOT)
+        message(FATAL "FindSYCL: ACPP_INSTALL_ROOT is not set.")
+    endif()
+
+    set(SYCL_COMPILER_ROOT ${ACPP_INSTALL_ROOT})
+    set(SYCL_COMPILER "${ACPP_INSTALL_ROOT}/bin/acpp")
+endif()
+
 if(NOT SYCL_COMPILER_ROOT)
     set(SYCL_COMPILER_ROOT $ENV{CMPLR_ROOT})
     if(NOT SYCL_COMPILER_ROOT)
@@ -28,14 +45,21 @@ if(NOT SYCL_COMPILER)
     endif()
 endif()
 
-set(SYCL_FLAGS "-fsycl")
-if(BUILD_SYCL_WITH_CUDA)
-    set(SYCL_FLAGS "${SYCL_FLAGS} -fsycl-targets=nvptx64-nvidia-cuda,spir64")
+# Do not set these flags for AdaptiveCpp.
+if (NOT BUILD_SYCL_ACPP)
+    set(SYCL_FLAGS "-fsycl")
+    if(BUILD_SYCL_WITH_CUDA)
+        set(SYCL_FLAGS "${SYCL_FLAGS} -fsycl-targets=nvptx64-nvidia-cuda,spir64")
+    endif()
+    set(SYCL_COMPILER_LFLAGS "-lsycl")
+else()
+    set(SYCL_FLAGS "--acpp-targets=generic -O2 -DUSING_ADAPTIVECPP_SYCL")
+    set(SYCL_COMPILER_LFLAGS "")
 endif()
 
 set(SYCL_FOUND TRUE)
 set(SYCL_CFLAGS "${SYCL_FLAGS}" CACHE STRING "SYCL Compiler Flags")
-set(SYCL_LFLAGS "${SYCL_CFLAGS} -lsycl" CACHE STRING "SYCL Linker Flags")
+set(SYCL_LFLAGS "${SYCL_CFLAGS} ${SYCL_COMPILER_LFLAGS}" CACHE STRING "SYCL Linker Flags")
 set(SYCL_INCLUDE_DIR "${SYCL_COMPILER_ROOT}/include" CACHE PATH "SYCL Include Directory")
 set(SYCL_LIBRARY_DIR "${SYCL_COMPILER_ROOT}/lib" CACHE PATH "SYCL Library Directory")
 
