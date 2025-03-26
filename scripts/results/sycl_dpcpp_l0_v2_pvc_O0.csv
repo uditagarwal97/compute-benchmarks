@@ -1,0 +1,100 @@
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=1 KernelExecTime=1 MeasureCompletion=0),4.207,4.199,4.96%,3.919,37.569,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=1 KernelExecTime=1 MeasureCompletion=1),6.812,6.800,6.78%,5.505,123.384,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=1 KernelExecTime=5 MeasureCompletion=1),8.411,8.679,7.90%,7.324,125.043,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=1 KernelExecTime=10 MeasureCompletion=1),9.984,9.995,6.39%,8.582,125.662,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=1 KernelExecTime=100 MeasureCompletion=1),40.681,39.978,9.86%,35.720,472.633,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=1 KernelExecTime=1 MeasureCompletion=0),4.288,4.273,10.05%,3.951,118.144,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=1 KernelExecTime=1 MeasureCompletion=1),6.605,6.590,6.06%,6.133,114.126,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=1 KernelExecTime=5 MeasureCompletion=1),8.209,7.948,7.66%,7.457,115.507,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=1 KernelExecTime=10 MeasureCompletion=1),10.334,10.174,5.80%,8.921,117.380,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=1 KernelExecTime=100 MeasureCompletion=1),40.675,39.525,9.92%,35.835,487.688,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=0),40.383,40.339,4.18%,38.984,471.472,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=1),43.485,43.420,3.93%,42.177,453.650,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=10 KernelExecTime=5 MeasureCompletion=1),44.161,44.241,3.89%,42.181,466.612,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=10 KernelExecTime=10 MeasureCompletion=1),52.643,52.636,3.33%,50.123,457.478,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=10 KernelExecTime=100 MeasureCompletion=1),360.233,361.519,1.03%,353.169,692.435,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=0),41.420,41.383,3.40%,40.262,398.255,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=10 KernelExecTime=1 MeasureCompletion=1),44.120,44.098,3.92%,42.571,479.620,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=10 KernelExecTime=5 MeasureCompletion=1),46.121,46.147,3.83%,44.049,485.768,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=10 KernelExecTime=10 MeasureCompletion=1),54.923,54.850,3.18%,52.171,458.040,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=10 KernelExecTime=100 MeasureCompletion=1),358.148,359.565,1.01%,351.338,500.366,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=20 KernelExecTime=1 MeasureCompletion=0),81.084,81.077,2.27%,78.811,518.698,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=20 KernelExecTime=1 MeasureCompletion=1),84.450,84.523,2.26%,81.984,529.150,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=20 KernelExecTime=5 MeasureCompletion=1),85.060,85.110,2.26%,82.735,520.411,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=20 KernelExecTime=10 MeasureCompletion=1),100.336,100.250,2.00%,97.561,532.166,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=20 KernelExecTime=100 MeasureCompletion=1),710.847,710.876,0.30%,706.879,1114.534,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=20 KernelExecTime=1 MeasureCompletion=0),82.602,82.553,2.02%,80.707,459.212,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=20 KernelExecTime=1 MeasureCompletion=1),85.156,85.080,2.22%,83.178,529.878,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=20 KernelExecTime=5 MeasureCompletion=1),87.689,87.576,2.00%,85.119,471.894,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=20 KernelExecTime=10 MeasureCompletion=1),104.866,104.774,1.95%,101.707,539.029,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=20 KernelExecTime=100 MeasureCompletion=1),710.721,710.756,0.25%,706.652,876.827,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=50 KernelExecTime=1 MeasureCompletion=0),200.230,200.328,1.16%,195.793,630.218,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=50 KernelExecTime=1 MeasureCompletion=1),205.172,205.171,1.32%,198.557,651.158,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=50 KernelExecTime=5 MeasureCompletion=1),209.562,209.612,1.16%,204.263,651.745,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=50 KernelExecTime=10 MeasureCompletion=1),254.618,254.515,0.94%,249.855,670.200,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=50 KernelExecTime=100 MeasureCompletion=1),1768.976,1769.685,0.22%,1759.659,1942.747,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=50 KernelExecTime=1 MeasureCompletion=0),209.351,209.492,1.10%,204.943,657.104,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=50 KernelExecTime=1 MeasureCompletion=1),205.016,204.618,1.40%,199.467,658.381,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=50 KernelExecTime=5 MeasureCompletion=1),208.631,208.442,1.37%,201.917,634.875,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=50 KernelExecTime=10 MeasureCompletion=1),242.957,242.834,0.97%,238.642,667.317,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=50 KernelExecTime=100 MeasureCompletion=1),1781.003,1781.697,0.22%,1771.661,1959.615,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=100 KernelExecTime=1 MeasureCompletion=0),395.423,394.907,1.07%,384.476,856.262,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=100 KernelExecTime=1 MeasureCompletion=1),399.861,399.550,1.06%,389.435,849.141,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=100 KernelExecTime=5 MeasureCompletion=1),405.385,405.351,1.11%,391.931,767.210,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=100 KernelExecTime=10 MeasureCompletion=1),504.310,504.095,0.58%,497.337,873.151,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=0 DiscardEvents=0 NumKernels=100 KernelExecTime=100 MeasureCompletion=1),3533.799,3533.693,0.07%,3526.278,3572.759,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=100 KernelExecTime=1 MeasureCompletion=0),411.781,411.855,0.81%,401.060,844.473,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=100 KernelExecTime=1 MeasureCompletion=1),418.726,419.593,1.09%,402.253,849.874,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=100 KernelExecTime=5 MeasureCompletion=1),421.635,421.816,0.81%,412.375,861.790,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=100 KernelExecTime=10 MeasureCompletion=1),480.615,480.346,0.61%,475.222,919.441,[CPU],[us]
+TestCase,Mean,Median,StdDev,Min,Max,Type
+SubmitKernel(api=sycl Profiling=0 Ioq=1 DiscardEvents=0 NumKernels=100 KernelExecTime=100 MeasureCompletion=1),3557.107,3557.028,0.08%,3549.279,3598.619,[CPU],[us]
